@@ -87,3 +87,6 @@
        }
         </styles>
 </html>
+
+<a href=" " type="submit" class="btn btn-success btn-sm" value= "1" >Accept </a> 
+                        <a href="" type="submit" class="btn btn-danger btn-sm" value = "0" >Reject </a> 

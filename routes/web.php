@@ -39,8 +39,8 @@ Route::group(['middleware' => ['auth','admin']],function () {
     Route::get('edit/{id}', [App\Http\Controllers\EmpController::class, 'edit'])->name('employee.edit');
     Route::post('update/{id}', [App\Http\Controllers\EmpController::class, 'update'])->name('employee.update');
     Route::get('show', [App\Http\Controllers\AttenController::class, 'show'])->name('employee.Atten');
-
-  
+    Route::get('status/{id}', [App\Http\Controllers\LeaveController::class, 'status'])->name('employee.updateleave');
+  Route::post('statusupdate/{id}',[App\Http\Controllers\LeaveController::class, 'statusupdate'])->name('employee.statusupdate');
 
 });
 
